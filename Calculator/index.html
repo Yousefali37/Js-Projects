@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="display" placeholder="0" readonly />
+        </div>
+        <div class="row">
+            <div class="row col-12">
+                <button class="btn btn-outline-secondary col-3 num">1</button>
+                <button class="btn btn-outline-secondary col-3 num">2</button>
+                <button class="btn btn-outline-secondary col-3 num">3</button>
+                <button class="btn btn-outline-secondary col-3 operator plus" data-operator="+">+</button>
+            </div>
+            <div class="row col-12">
+                <button class="btn btn-outline-secondary col-3 num">4</button>
+                <button class="btn btn-outline-secondary col-3 num">5</button>
+                <button class="btn btn-outline-secondary col-3 num">6</button>
+                <button class="btn btn-outline-secondary col-3 operator minus" data-operator="-">-</button>
+            </div>
+            <div class="row col-12">
+                <button class="btn btn-outline-secondary col-3 num">7</button>
+                <button class="btn btn-outline-secondary col-3 num">8</button>
+                <button class="btn btn-outline-secondary col-3 num">9</button>
+                <button class="btn btn-outline-secondary col-3 operator mult" data-operator="*">*</button>
+            </div>
+            <div class="row col-12">
+                <button class="btn btn-outline-secondary col-3 clear">C</button>
+                <button class="btn btn-outline-secondary col-3 num">0</button>
+                <button class="btn btn-outline-secondary col-3 equal">=</button>
+                <button class="btn btn-outline-secondary col-3 operator divide" data-operator="/">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
