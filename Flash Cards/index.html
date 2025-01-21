@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Flash Cards</title>
+</head>
+
+<body>
+    <div class="row justify-content-center align-items-center">
+        <div class="CardContainer row">
+            <div class="col-12">
+                <form id="cardForm">
+                    <h1>Create Flashcard</h1>
+                    <div class="mb-3">
+                        <label for="ques" class="form-label">Question</label>
+                        <textarea class="form-control" name="ques" id="ques" cols="35" placeholder="Please Enter Your Question"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="answer" class="form-label">Answer</label>
+                        <textarea class="form-control" name="answer" id="ans" cols="35" placeholder="Please Enter Your Answer"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <button type="reset" class="btn btn-dark">Clear</button>
+                </form>
+                <h5 id="errorMSG" style="color: red;"></h5> <!-- Error message area -->
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mx-4 gap-5" id="CardsGroup">
+        <!-- Dynamically added flashcards will go here -->
+    </div>
+</body>
+<script src="JS/index.js"></script>
+</html>
