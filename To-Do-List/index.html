@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="Font Awesome/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="bodyContainer row">
+        <div class="headerContainer col-lg-5 col-sm-12">
+            <h1 class="col-4">
+                <i class="fa fa-tasks text-light col-1" aria-hidden="true"></i>
+                To-Do-List
+            </h1>
+        </div>
+        <div class="formContainer col-lg-2 col-sm-12">
+            <form id="todoForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="inputValue" placeholder="Add a new task" />
+                    <button type="submit" class="btn btn-light">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-start align-items-center" id="listContainer">
+            
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
