@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container row">
+        <div class="formContainer col-12">
+            <h1 class="text-center">Tip Calculator</h1>
+            <hr>
+            <form class="row" id="tipForm">
+                <div class="bill">
+                    <label for="amount">Bill Amount</label><br>
+                    <input type="number" id="billAmount" placeholder="Bill Amount"><br>
+                </div>
+                <div class="numberOfGuests">
+                    <label for="guests">Number of Guests</label><br>
+                    <input type="number" id="guestsNum" placeholder="Number of Guests"><br>
+                </div>
+                <div class="service">
+                    <label for="services">Service Quality</label>
+                    <select name="servicesQuality" id="serviceQuality">
+                        <option value="30% - Outstanding">30% - Outstanding</option>
+                        <option value="20% - Good">20% - Good</option>
+                        <option value="15% - it was ok">15% - it was ok</option>
+                        <option value="10% - bad">10% - bad</option>
+                        <option value="5% - terrible">5% - terrible</option>
+                    </select>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-dark" id="calc">Calculate</button>
+            </form>
+        </div>
+        <div class="resultDiv col-12">
+            <h3 id="tipresult"></h3>
+        </div>
+    </div>
+</body>
+
+
+<script src="JS/index.js"></script>
+</html>
